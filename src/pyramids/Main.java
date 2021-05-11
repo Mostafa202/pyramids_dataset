@@ -9,8 +9,11 @@ public class Main {
 
     public static void main(String[] args) {
 
+
         pyramid_csv_DAO r=new pyramid_csv_DAO();
+
         List<pyramid>pyramids=r.read_pyramids_from_csv("/home/mostafa/Downloads/archive/pyramids.csv");
+
         int i=0;
         for(pyramid p:pyramids){
             System.out.println('#'+(i++)+" "+p.getHeight()+" - "+p.getModern_name()+" - "+p.getPharaoh()+" - "+p.getSite());
